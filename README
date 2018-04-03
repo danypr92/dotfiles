@@ -8,25 +8,20 @@
 
 ## Install
 
-Install zsh according to these instructions: `sudo apt-get install zsh`
-Install `oh-my-zsh`, you can run:
+Install zsh according to these instructions: 
+`sudo apt-get install zsh`
 
-*curl*:
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-*wget*:
-```
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-```
+Reboot to completly install.
 
 Run `make` in thee repository directory.
 
 # Content
-## Aliases
+## ZSH configuration
 
-All my aliases:
+`.zshrc` file using [`spaceship-theme`](https://github.com/denysdovhan/spaceship-prompt) and using the next plugins:
+
+* Git
+* Mercurial
 
 ## Vim
 
@@ -35,4 +30,9 @@ My vim configuration. Using [Pathogen]() to manages the plugins:
 * [NERDTree]()
 * [NERDComment]()
 * [MiniBufferExplorer]()
+
+## [FZF](https://github.com/junegunn/fzf)
+
+Install and use for search in command-line history.
+
 
