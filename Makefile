@@ -1,5 +1,5 @@
 git:
-	ln -fsn $(PWD)/gitconfig ~/.gitconfig
+	ln -fsn $(PWD)/git/gitconfig ~/.gitconfig
 
 curl:
 	sudo apt install openssl ca-certificates
