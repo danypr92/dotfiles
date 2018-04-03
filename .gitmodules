@@ -1,0 +1,31 @@
+; Vim
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "vim/bundle/ShowTrailingWhitespace"]
+	path = vim/bundle/ShowTrailingWhitespace
+	url = git@github.com:vim-scripts/ShowTrailingWhitespace.git
+[submodule "vim/bundle/minibufexpl.vim"]
+	path = vim/bundle/minibufexpl.vim
+	url = git@github.com:fholgado/minibufexpl.vim.git
+[submodule "vim/bundle/ale"]
+	path = vim/bundle/ale
+	url = git@github.com:w0rp/ale.git
+
+; ZSH
+[submodule "zsh/oh-my-zsh"]
+	path = zsh/oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
+
+[submodule "zsh/theme/spaceship-prompt"]
+	path = zsh/theme/spaceship-prompt
+	url = git@github.com:denysdovhan/spaceship-prompt.git
+
+; FZF
+[submodule "fzf"]
+	path = fzf
+	url = git@github.com:junegunn/fzf.git
+
