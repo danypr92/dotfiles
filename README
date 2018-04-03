@@ -1,0 +1,38 @@
+# Installation
+
+## Prerequisites
+
+* Ubuntu (16.04)
+* Git (2.0+ recommended)
+* Vim (8+) - [How to install?](http://tipsonubuntu.com/2016/09/13/vim-8-0-released-install-ubuntu-16-04/)
+
+## Install
+
+Install zsh according to these instructions: `sudo apt-get install zsh`
+Install `oh-my-zsh`, you can run:
+
+*curl*:
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+*wget*:
+```
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
+Run `make` in thee repository directory.
+
+# Content
+## Aliases
+
+All my aliases:
+
+## Vim
+
+My vim configuration. Using [Pathogen]() to manages the plugins:
+
+* [NERDTree]()
+* [NERDComment]()
+* [MiniBufferExplorer]()
+
