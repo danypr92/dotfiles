@@ -5,8 +5,7 @@ curl:
 	sudo apt install openssl ca-certificates
 	sudo apt install curl
 vim:
-	ln -fsn $(PWD)/gitconfig ~/.gitconfig
-	ln -fsn $(PWD)/.vimrc ~/.vimrc
+	ln -fsn $(PWD)/vim/.vimrc ~/.vimrc
 	mkdir -p ~/.vim/autoload
 	ln -fsn $(PWD)/vim/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
 	# Plugins
