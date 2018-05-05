@@ -32,4 +32,4 @@ setup:
 
 all: git setup curl vim fzf zsh
 
-.PHONY: all
+.PHONY: all git setup curl vim fzf zsh
