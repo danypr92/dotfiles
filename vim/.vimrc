@@ -15,9 +15,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Show linenumber
-set number
-set ruler
+set cursorline      " Enable highlighting of the current line
+set number          " Show line numbers.
+set ruler           " Show the line and column number of the cursor position,
+                    " separated by a comma.
+set wildmenu
 
 " Set Proper Tabs
 set tabstop=4
