@@ -15,6 +15,11 @@
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
 
+; Vim Colo Scheme
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+
 ; ZSH
 [submodule "zsh/oh-my-zsh"]
 	path = zsh/oh-my-zsh
@@ -28,13 +33,3 @@
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/junegunn/fzf.git
-
-[submodule "timeoverflow"]
-	path = timeoverflow
-	url = https://github.com/coopdevs/timeoverflow
-[submodule "zsh/themes/spaceship-prompt"]
-	path = zsh/themes/spaceship-prompt
-	url = https://github.com/denysdovhan/spaceship-prompt.git
-[submodule "vim/bundle/minibufexpl"]
-	path = vim/bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
