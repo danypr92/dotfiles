@@ -18,7 +18,10 @@
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
 
-; Vim Colo Scheme
+; Vim Theme and tabline
+[submodule "vim/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
