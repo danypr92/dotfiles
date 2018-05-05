@@ -8,11 +8,11 @@ curl:
 	sudo apt install curl
 
 vim:
-	ln -fsn $(DIRECTORY)/vim/.vimrc ~/.vimrc
-	mkdir -p ~/.vim/autoload
-	ln -fsn $(DIRECTORY)/vim/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
-	# Plugins
+	mkdir -p ~/.vim
+	ln -fsn $(DIRECTORY)/vim/vimrc ~/.vimrc
+	ln -fsn $(DIRECTORY)/vim/pathogen/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
 	ln -fsn $(DIRECTORY)/vim/bundle ~/.vim/bundle
+	ln -fsn $(DIRECTORY)/vim/colors ~/.vim/colors
 
 fzf:
 	ln -fsn $(DIRECTORY)/fzf ~/.fzf
