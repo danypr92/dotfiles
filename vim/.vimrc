@@ -1,9 +1,13 @@
 " Pathogen load
-filetype off
 execute pathogen#infect()
-call pathogen#helptags()
+
+filetype on
 filetype plugin indent on
-syntax on
+
+" Solarized ColorScheme - https://github.com/altercation/vim-colors-solarized
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Easier split navigations
 nnoremap <C-J> <C-W><C-J>
