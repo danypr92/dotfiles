@@ -26,10 +26,13 @@ zsh:
 	ln -fsn $(DIRECTORY)/zsh/themes/shpaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
 	sudo chsh -s $(which zsh)
 
+i3:
+	ln -fsn $(DIRECTORY)/i3/ ~/.i3
+
 setup:
 	git submodule init
 	git submodule update
 
-all: git setup curl vim fzf zsh
+all: i3 git setup curl vim fzf zsh
 
-.PHONY: all git setup curl vim fzf zsh
+.PHONY: all i3 git setup curl vim fzf zsh
