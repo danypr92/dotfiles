@@ -8,9 +8,9 @@
 [submodule "vim/bundle/ShowTrailingWhitespace"]
 	path = vim/bundle/ShowTrailingWhitespace
 	url = https://github.com/vim-scripts/ShowTrailingWhitespace.git
-[submodule "vim/bundle/minibufexpl.vim"]
+[submodule "vim/bundle/minibufexpl"]
 	path = vim/bundle/minibufexpl.vim
-	url = git@github.com:fholgado/minibufexpl.vim.git
+	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = https://github.com/w0rp/ale.git
@@ -27,7 +27,7 @@
 
 [submodule "zsh/theme/spaceship-prompt"]
 	path = zsh/theme/spaceship-prompt
-	url = git@github.com:denysdovhan/spaceship-prompt.git
+	url = https://github.com/denysdovhan/spaceship-prompt.git
 
 ; FZF
 [submodule "fzf"]
