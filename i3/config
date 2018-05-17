@@ -172,9 +172,10 @@ bar {
 # lock th screen
 bindsym Control+$mod+l exec i3lock -c 0c0c0e
 
-# Raise Volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -10%
+# Raise Volume using amixer
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
