@@ -7,6 +7,10 @@ curl:
 	sudo apt install openssl ca-certificates
 	sudo apt install curl
 
+neovim:
+	mkdir -p ~/.config/nvim/
+	ln -fsn $(DIRECTORY)/neovim/init.vim ~/.config/nvim/init.vim
+
 vim:
 	mkdir -p ~/.vim
 	ln -fsn $(DIRECTORY)/vim/vimrc ~/.vimrc
@@ -33,6 +37,6 @@ setup:
 	git submodule init
 	git submodule update
 
-all: i3 git setup curl vim fzf zsh
+all: i3 git setup curl neovim vim fzf zsh
 
-.PHONY: all i3 git setup curl vim fzf zsh
+.PHONY: all i3 git setup curl neovim vim fzf zsh
