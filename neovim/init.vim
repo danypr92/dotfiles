@@ -129,3 +129,7 @@ nnoremap <silent> <expr> <Leader><Leader> (expand('%') =~ 'NERD_tree' ? "\<c-w>\
 nnoremap <silent> <Leader>C        :Colors<CR>
 nnoremap <silent> <Leader><Enter>  :Buffers<CR>
 nnoremap <silent> <Leader>L :Lines<CR>
+
+" Python support
+let g:python_host_prog  = '/home/daniel/.pyenv/versions/pyneovim/bin/python'
+let g:python3_host_prog = '/home/daniel/.pyenv/versions/py3neovim/bin/python'
