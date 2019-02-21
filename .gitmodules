@@ -8,3 +8,6 @@
 	url = https://github.com/denysdovhan/spaceship-prompt.git
 
 ; FZF
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git
