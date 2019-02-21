@@ -11,13 +11,6 @@ neovim:
 	mkdir -p ~/.config/nvim/
 	ln -fsn $(DIRECTORY)/neovim/init.vim ~/.config/nvim/init.vim
 
-vim:
-	mkdir -p ~/.vim
-	ln -fsn $(DIRECTORY)/vim/vimrc ~/.vimrc
-	ln -fsn $(DIRECTORY)/vim/pathogen/autoload/pathogen.vim ~/.vim/autoload/pathogen.vim
-	ln -fsn $(DIRECTORY)/vim/bundle ~/.vim/bundle
-	ln -fsn $(DIRECTORY)/vim/colors ~/.vim/colors
-
 fzf:
 	ln -fsn $(DIRECTORY)/fzf ~/.fzf
 	~/.fzf/install
@@ -40,6 +33,6 @@ setup:
 	git submodule init
 	git submodule update
 
-all: i3 git setup curl neovim vim fzf zsh
+all: i3 git setup curl neovim fzf zsh
 
-.PHONY: all i3 git setup curl neovim vim fzf zsh
+.PHONY: all i3 git setup curl neovim fzf zsh
