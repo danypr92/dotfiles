@@ -33,6 +33,9 @@ zsh:
 i3:
 	ln -fsn $(DIRECTORY)/i3/ ~/.i3
 
+aliases:
+	ln -fsn $(DIRECTORY)/aliases ~/.aliases
+
 setup:
 	git submodule init
 	git submodule update
