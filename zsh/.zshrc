@@ -93,6 +93,38 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.aliases
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Mercurial Plugin Variables
+ZSH_THEME_HG_PROMPT_PREFIX="%{$fg_bold[magenta]%}hg:(%{$fg[red]%}"
+ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_DIRTY="%{$fg[magenta]%}) %{$fg[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[magenta]%})"
+
+# VirtualenvWrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/dev
+source /usr/local/bin/virtualenvwrapper.sh
+
+# The Fuck
+eval $(thefuck --alias)
+
+
+## My message :D
+MSG=$( figlet "Ponte las gafas!!" )
+echo -e "$fg_bold[yellow]$MSG$reset_color"
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+# Pyenv autoload
+export PATH="/home/daniel/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
