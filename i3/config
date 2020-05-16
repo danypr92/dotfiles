@@ -23,6 +23,15 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        font pango:mono 10
+        status_command i3blocks
+        position top
+        mode dock
+        modifier None
+}
 
 set $mod Mod1
 
@@ -86,6 +95,7 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
+bindsym $mod+t split toggle
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -163,19 +173,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        status_command i3status --config ~/.i3/i3status.conf
-        tray_output primary
-}
-# lock th screen
+# lock the screen
 bindsym Control+$mod+l exec i3lock -c 0c0c0e
 
 # Raise Volume using amixer
-bindsym XF86AudioMute exec --no-startup-id amixer -D pulse set Master 1+ toggle
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
+bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -SIGRTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -SIGRTMIN+10 i3blocks
 
 # Change screen birghtness
 bindsym XF86MonBrightnessUp exec --no-startup-id xrandr --output eDP-1 --brightness 1
@@ -184,13 +188,12 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xrandr --output eDP-1 --brigh
 # Enable NetworkManager to manage wifi connections
 exec --no-startup-id nm-applet
 
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
-# keysym-based config which used their favorite modifier (alt or windows)
-#
-# i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
-#
-# Please remove the following exec line:
-#######################################################################
-exec i3-config-wizard
+new_window 1pixel
+
+bindsym $mod+Shift+w    exec --no-startup-id firefox
+bindsym $mod+Insert   exec --no-startup-id showclip
+bindsym $mod+Pause    exec --no-startup-id xcqr
+
+
+bindsym $mod+c exec setxkbmap es && pkill -SIGRTMIN+10 i3blocks
+bindsym $mod+u exec setxkbmap us && pkill -SIGRTMIN+10 i3blocks
