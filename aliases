@@ -1,10 +1,19 @@
+# Work
+alias coopdevs="cd ~/dev/coopdevs"
+alias somconnexio="cd ~/dev/coopdevs/somconnexio"
+alias eticom="cd ~/dev/coopdevs/somconnexio/eticom/modules/eticom"
+alias opencell="cd ~/dev/coopdevs/somconnexio/OpenCell/client/PyOpenCell"
+alias timeoverflow="cd ~/dev/coopdevs/timeoverflow"
+alias odoo="cd ~/dev/coopdevs/odoo"
+alias elk="cd ~/dev/coopdevs/elk"
+
 ## LXC
 alias lxc-ls="sudo lxc-ls -f"
 alias lxc-start="sudo systemctl start lxc@"
 alias lxc-stop="sudo systemctl stop lxc@"
 
 
-# Efficiently
+# Effiently
 alias screens="xrandr --output eDP-1 --auto --output VGA-1 --auto --left-of eDP-1"
 alias update="sudo apt update"
 alias list="sudo apt list --upgradable"
@@ -13,3 +22,8 @@ alias sstatus="sudo systemctl status"
 alias srestart="sudo systemctl restart"
 alias sstart="sudo systemctl start"
 alias nv="nvim"
+
+
+# Docker
+alias dps="docker ps"
+alias dpsa="docker ps --all"

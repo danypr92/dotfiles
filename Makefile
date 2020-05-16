@@ -20,8 +20,8 @@ zsh:
 	~/.oh-my-zsh/tools/install.sh
 	ln -fsn $(DIRECTORY)/zsh/.zshrc ~/.zshrc
 	# Spaceship Theme
-	ln -fsn $(DIRECTORY)/zsh/themes/shpaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
-	sudo chsh -s $(which zsh)
+	ln -fsn $(DIRECTORY)/zsh/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+	chsh -s /usr/bin/zsh
 
 i3:
 	ln -fsn $(DIRECTORY)/i3/ ~/.i3
