@@ -1,4 +1,5 @@
-DIRECTORY = ~/dev/dotfiles
+DIRECTORY:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+
 
 git:
 	ln -fsn $(DIRECTORY)/git/gitconfig ~/.gitconfig
