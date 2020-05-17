@@ -29,10 +29,6 @@ i3:
 	ln -fsn $(DIRECTORY)/i3/config ~/.config/i3/config
 	ln -fsn $(DIRECTORY)/i3/i3blocks.conf ~/.i3blocks.conf
 
-dunst:
-	sudo apt install libdbus-1-dev libx11-dev libxinerama-dev libxrandr-dev libxss-dev libglib2.0-dev libpango1.0-dev libgtk-3-dev libxdg-basedir-dev
-	cd $(DIRECTORY)/dunst && make && sudo make install
-
 aliases:
 	ln -fsn $(DIRECTORY)/aliases ~/.aliases
 
