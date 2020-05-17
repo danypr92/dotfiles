@@ -1,6 +1,9 @@
 DIRECTORY:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 
+fuck:
+	sudo apt install thefuck
+
 git:
 	ln -fsn $(DIRECTORY)/git/gitconfig ~/.gitconfig
 
@@ -17,7 +20,7 @@ fzf:
 	~/.fzf/install
 
 zsh:
-	apt-get install zsh
+	sudo apt-get install zsh
 	ln -fsn $(DIRECTORY)/zsh/oh-my-zsh ~/.oh-my-zsh
 	~/.oh-my-zsh/tools/install.sh
 	ln -fsn $(DIRECTORY)/zsh/.zshrc ~/.zshrc
@@ -37,6 +40,6 @@ setup:
 	git submodule init
 	git submodule update
 
-all: i3 git setup curl neovim fzf zsh aliases
+all: i3 git setup curl neovim fzf zsh aliases fuck
 
-.PHONY: all i3 git setup curl neovim fzf zsh aliases
+.PHONY: all i3 git setup curl neovim fzf zsh aliases fuck
