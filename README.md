@@ -5,6 +5,7 @@
 * Ubuntu (16.04)
 * Git (2.0+ recommended)
 * Vim (8+) - [How to install?](http://tipsonubuntu.com/2016/09/13/vim-8-0-released-install-ubuntu-16-04/)
+* [`make`](https://packages.ubuntu.com/bionic/make)
 
 ## Install
 
