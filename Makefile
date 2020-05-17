@@ -37,6 +37,6 @@ setup:
 	git submodule init
 	git submodule update
 
-all: i3 git setup curl neovim fzf zsh
+all: i3 git setup curl neovim fzf zsh aliases
 
-.PHONY: all i3 git setup curl neovim fzf zsh
+.PHONY: all i3 git setup curl neovim fzf zsh aliases
