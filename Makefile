@@ -17,6 +17,7 @@ fzf:
 	~/.fzf/install
 
 zsh:
+	apt-get install zsh
 	ln -fsn $(DIRECTORY)/zsh/oh-my-zsh ~/.oh-my-zsh
 	~/.oh-my-zsh/tools/install.sh
 	ln -fsn $(DIRECTORY)/zsh/.zshrc ~/.zshrc
