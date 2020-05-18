@@ -67,6 +67,7 @@ plugins=(
   z
   pyenv
   rbenv
+  tmuxinator
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,8 +98,6 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
 
 # FZF
@@ -118,5 +117,3 @@ export PATH="/home/daniel/bin:$PATH"
 function tat {
   tmux new-session -As "$(basename "$PWD" | tr . -)"
 }
-
-source ~/.bin/tmuxinator.zsh
